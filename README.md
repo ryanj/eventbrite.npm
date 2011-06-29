@@ -1,6 +1,6 @@
 # Eventbrite.npm
 
-A Node.js module for interfacing with the [Eventbrite](http://www.eventbrite.com) API
+A javascript client library (Node.js module) for the [Eventbrite](http://developer.eventbrite.com) API
 
 ## Installation ##
 
@@ -9,6 +9,7 @@ A Node.js module for interfacing with the [Eventbrite](http://www.eventbrite.com
 ## Examples ##
 
 ### First, load the Eventbrite module
+
     Eventbrite = require('./lib/eventbrite').Eventbrite;
 
 ### Initialize your API client
@@ -18,9 +19,11 @@ A Node.js module for interfacing with the [Eventbrite](http://www.eventbrite.com
     http://www.eventbrite.com/userkeyapi
 
 Add your API key below, define a user_key to access private data
+
     var eb_client = Eventbrite('YOUR_API_KEY','USER_KEY');
 
 Check out the [Eventbrite developer docs](http://developer.eventbrite.com/doc/) for more information about the functions available through this API
+
     params = {'city': "San Francisco", 'region': "CA"};
 
     eb_client.event_search( params, function(err, data){
