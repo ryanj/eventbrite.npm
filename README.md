@@ -18,7 +18,7 @@ A javascript client library (Node.js module) for the [Eventbrite](http://develop
 - Each user can find their user_key on this page: 
     http://www.eventbrite.com/userkeyapi
 
-Add your API key below, define a user_key to access private data
+Add your API key below. Optionally, you can also supply a user_key to access private data. Clients that do not provide a valid user_key will be limited to public data access levels.
 
     var eb_client = Eventbrite('YOUR_API_KEY','USER_KEY');
 
