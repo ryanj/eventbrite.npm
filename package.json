@@ -1,20 +1,17 @@
 {
   "name": "eventbrite",
+  "author": "ryan jarvinen <ryan.jarvinen@gmail.com>",
   "description": "Eventbrite API Client",
   "keywords": ["eventbrite", "events", "location"],
-  "version": "0.1.0",
-  "homepage": "https://github.com/ryanjarvinen/eventbrite.npm",
-  "repository": { "type" : "git", "url" : "https://github.com/ryanjarvinen/eventbrite.npm.git" },
-  "author": { 
-    "name" : "ryan jarvinen",
-    "email" : "ryan.jarvinen@gmail.com",
-    "url" : "http://developer.eventbrite.com/"
-  },
+  "version": "0.1.1",
+  "homepage": "http://eventbrite.github.com/",
+  "repository": { "type": "git", 
+                  "url": "https://github.com/ryanjarvinen/eventbrite.npm.git" },
   "main": "lib/eventbrite.js",
   "directories": {
     "lib": "lib"
   },
   "engines": {
-    "node": ">=0.2.6"
+    "node": ">=0.2.3"
   }
 }
