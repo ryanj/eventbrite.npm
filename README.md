@@ -10,7 +10,7 @@ A javascript client library (Node.js module) for the [Eventbrite](http://develop
 
 ### First, load the Eventbrite module
 
-    Eventbrite = require('./lib/eventbrite').Eventbrite;
+    var Eventbrite = require('eventbrite').Eventbrite;
 
 ### Initialize your API client
 - Eventbrite users can request an API key on the following page:
