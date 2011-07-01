@@ -22,14 +22,42 @@ Add your API key below. Optionally, you can also supply a user_key to access pri
 
     var eb_client = Eventbrite('YOUR_API_KEY','USER_KEY');
 
-Check out the [Eventbrite developer docs](http://developer.eventbrite.com/doc/) for more information about the functions available through this API
+### event_search
 
-    params = {'city': "San Francisco", 'region': "CA"};
+    var params = {'city': "San Francisco", 'region': "CA"};
 
     eb_client.event_search( params, function(err, data){
         console.log(err);
         console.log(data);
     });
+
+### event_get
+
+    eb_client.event_get( {'id': 123456789 }, function(err, data){
+        // render the event as a ticket widget:
+        var ticket_widget_html = eb_client.widget.ticket( data.event ); 
+
+        // or, render it as a countdown widget:
+        var countdown_widget_html = eb_client.widget.countdown( data.event ); 
+
+        console.log( countdown_widget_html + ticket_widget_html );
+    });
+
+### [ event_list_attendees ](http://developer.eventbrite.com/doc/events/event_list_attendees/ )
+
+    eb_client.event_list_attendees ( {'id': 123456789 }, function(err, data){
+        console.log(err);
+        console.log(data);
+    });
+
+### [user_list_events](http://developer.eventbrite.com/doc/users/user_list_events/)
+
+    eb_client.user_list_events ( {}, function(err, data){
+        console.log(err);
+        console.log(data);
+    });
+
+Check out the [Eventbrite developer docs](http://developer.eventbrite.com/doc/) for more information about the functions available through this API
 
     
 ## Resources ##
