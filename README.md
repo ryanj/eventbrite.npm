@@ -22,7 +22,7 @@ Add your API key below. Optionally, you can also supply a user_key to access pri
 
     var eb_client = Eventbrite('YOUR_API_KEY','USER_KEY');
 
-### [ event_search ]( http://developer.eventbrite.com/doc/events/event_get/ )
+### [ event_search ]( http://developer.eventbrite.com/doc/events/event_search/ )
 
     var params = {'city': "San Francisco", 'region': "CA"};
 
