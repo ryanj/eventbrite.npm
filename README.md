@@ -57,7 +57,7 @@ Add your API key below. Optionally, you can also supply a user_key to access pri
         console.log(data);
     });
 
-Check out the [Eventbrite developer docs](http://developer.eventbrite.com/doc/) for more information about the functions available through this API
+Check out the [Eventbrite developer docs](http://developer.eventbrite.com/doc/) for more information about the functions available through the API.
 
     
 ## Resources ##
