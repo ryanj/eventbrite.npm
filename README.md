@@ -10,7 +10,7 @@ A javascript client library (Node.js module) for the [Eventbrite](http://develop
 
 ### First, load the Eventbrite module
 
-    var Eventbrite = require('eventbrite').Eventbrite;
+    var Eventbrite = require('eventbrite');
 
 ### Initialize your API client
 - Eventbrite users can request an API key on the following page:
@@ -20,7 +20,7 @@ A javascript client library (Node.js module) for the [Eventbrite](http://develop
 
 Add your API key below. Optionally, you can also supply a user_key to access private data. Clients that do not provide a valid user_key will be limited to public data access levels.
 
-    var eb_client = Eventbrite('YOUR_API_KEY','USER_KEY');
+    var eb_client = Eventbrite(YOUR_API_KEY, USER_KEY);
 
 ### [ event_search ]( http://developer.eventbrite.com/doc/events/event_search/ )
 
@@ -33,7 +33,7 @@ Add your API key below. Optionally, you can also supply a user_key to access pri
 
 ### [ event_get ]( http://developer.eventbrite.com/doc/events/event_get/ )
 
-    eb_client.event_get( {'id': 123456789 }, function(err, data){
+    eb_client.event_get( {'id': EVENT_ID }, function(err, data){
         // render the event as a ticket widget:
         var ticket_widget_html = eb_client.widget.ticket( data.event ); 
 
@@ -45,7 +45,7 @@ Add your API key below. Optionally, you can also supply a user_key to access pri
 
 ### [ event_list_attendees ]( http://developer.eventbrite.com/doc/events/event_list_attendees/ )
 
-    eb_client.event_list_attendees ( {'id': 123456789 }, function(err, data){
+    eb_client.event_list_attendees ( {'id': EVENT_ID }, function(err, data){
         console.log(err);
         console.log(data);
     });
