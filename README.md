@@ -20,7 +20,7 @@ A javascript client library (Node.js module) for the [Eventbrite](http://develop
 
 Add your API key below. Optionally, you can also supply a user_key to access private data. Clients that do not provide a valid user_key will be limited to public data access levels.
 
-    var eb_client = Eventbrite(YOUR_API_KEY, USER_KEY);
+    var eb_client = Eventbrite({'app_key':"YOUR_API_KEY", 'user_key':"YOUR_USER_KEY"});
 
 ### [ event_search ]( http://developer.eventbrite.com/doc/events/event_search/ )
 
