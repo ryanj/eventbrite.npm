@@ -3,7 +3,7 @@
   "author": "ryan jarvinen <ryan.jarvinen@gmail.com>",
   "description": "Eventbrite API Client",
   "keywords": ["eventbrite", "events", "registration", "payments", "location"],
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "http://eventbrite.github.com/",
   "repository": { "type": "git", 
                   "url": "https://github.com/ryanjarvinen/eventbrite.npm.git" },
