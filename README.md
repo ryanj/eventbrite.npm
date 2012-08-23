@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/ryanjarvinen/eventbrite.npm.png)](http://travis-ci.org/ryanjarvinen/eventbrite.npm)
 # Eventbrite.npm
 
 A javascript client library (Node.js module) for the [Eventbrite](http://developer.eventbrite.com) API
