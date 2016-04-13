@@ -2,6 +2,9 @@
 
 A javascript client library (Node.js module) for the [Eventbrite](http://developer.eventbrite.com) API
 
+##  WARNING: This library uses Eventbrite API endpoints that have been deprecated (as of April 2015). 
+See Eventbrite's developer site for updated info on how to use thier new APIs: https://developer.eventbrite.com
+
 ## Installation ##
 
     npm install eventbrite
